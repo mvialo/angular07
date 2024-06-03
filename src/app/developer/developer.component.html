@@ -1,0 +1,12 @@
+<div>
+    <p> Nom : {{developer1.lastName}}</p>
+    <p> Prénom : {{developer1.firstName}}</p>
+    <p> Age : {{developer1.age}}</p>
+    <p> Genre : {{developer1.gender}} </p>
+    <p> Biographie : {{developer1.bio}} </p>
+    <div>
+        @for (s of developer1.skills; track s) {
+        <app-skill [skillInput]="s"></app-skill>
+        }
+    </div>
+</div>
